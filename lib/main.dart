@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:portofolio/common/common_style.dart';
 
 void main() {
@@ -28,11 +29,18 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text(
-          'Heading H1',
-          style: CommonStyle().heading1,
-        ),
+      body: Column(
+        children: [
+          Center(
+            child: Text(
+              'Heading H1',
+              style: CommonStyle().heading1,
+            ),
+          ),
+          SvgPicture.asset(
+            'assets/images/icon_light_close.svg',
+          ),
+        ],
       ),
     );
   }
