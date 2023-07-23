@@ -1,7 +1,7 @@
 class CommonSize {
   // Desktop >= 1024px
   // Tablet => 768 & <= 1024
-  // Mobile < 768 
+  // Mobile < 768
   int largeScreenSize = 1024;
   int mediumScreenSize = 768;
 
@@ -15,4 +15,5 @@ class CommonSize {
   double size18 = 18;
   double size16 = 16;
   double size14 = 14;
+  double size6 = 6;
 }

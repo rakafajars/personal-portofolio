@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:portofolio/common/common_style.dart';
 
+import 'persentation/widget/button_widget.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -30,6 +32,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Center(
             child: Text(
@@ -40,6 +43,7 @@ class MyHomePage extends StatelessWidget {
           SvgPicture.asset(
             'assets/images/icon_light_close.svg',
           ),
+          ButtonWidget(),
         ],
       ),
     );
