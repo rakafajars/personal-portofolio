@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:portofolio/common/common_style.dart';
 
+import 'persentation/pages/portofolio/header_portofolio.dart';
 import 'persentation/widget/button_widget.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const MyHomePage(),
     );
@@ -30,21 +32,12 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var screenSize = MediaQuery.of(context).size;
+
     return Scaffold(
-      body: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Center(
-            child: Text(
-              'Heading H1',
-              style: CommonStyle().heading1,
-            ),
-          ),
-          SvgPicture.asset(
-            'assets/images/icon_light_close.svg',
-          ),
-          ButtonWidget(),
-        ],
+      appBar: PreferredSize(
+        preferredSize: Size(screenSize.width, 1000),
+        child: const HeaderPortofolio(),
       ),
     );
   }
