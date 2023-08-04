@@ -16,5 +16,6 @@ class CommonSize {
   double size18 = 18;
   double size16 = 16;
   double size14 = 14;
+  double size8 = 8;
   double size6 = 6;
 }
