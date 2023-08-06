@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:portofolio/common/common_style.dart';
-
-import 'persentation/widget/button_widget.dart';
+import 'persentation/pages/portofolio/portofolio_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,33 +16,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Center(
-            child: Text(
-              'Heading H1',
-              style: CommonStyle().heading1,
-            ),
-          ),
-          SvgPicture.asset(
-            'assets/images/icon_light_close.svg',
-          ),
-          ButtonWidget(),
-        ],
-      ),
+      home: const PortofolioPage(),
     );
   }
 }

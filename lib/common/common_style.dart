@@ -76,7 +76,6 @@ class CommonStyle {
     fontSize: CommonSize().size16,
     letterSpacing: -1.20,
     color: CommonColor().grayLight900,
-    decoration: TextDecoration.underline,
   );
 
   TextStyle body3 = GoogleFonts.inter(

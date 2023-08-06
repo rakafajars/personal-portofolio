@@ -5,6 +5,7 @@ class CommonSize {
   int largeScreenSize = 1024;
   int mediumScreenSize = 768;
 
+  double size80 = 80;
   double size60 = 60;
   double size48 = 48;
   double size38 = 38;
@@ -15,5 +16,6 @@ class CommonSize {
   double size18 = 18;
   double size16 = 16;
   double size14 = 14;
+  double size8 = 8;
   double size6 = 6;
 }

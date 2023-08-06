@@ -11,5 +11,6 @@ class AssetIcon {
 	static const String iconLightMode = 'assets/icon/icon_light_mode.svg';
 	static const String iconLightPhone = 'assets/icon/icon_light_phone.svg';
 	static const String iconLightTwitter = 'assets/icon/icon_light_twitter.svg';
+	static const String people = 'assets/icon/people.jpeg';
 }
 
