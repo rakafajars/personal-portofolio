@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portofolio/common/common_size.dart';
+import 'package:portofolio/persentation/pages/portofolio/widget/action_widget.dart';
 import 'package:portofolio/persentation/pages/portofolio/widget/content_widget.dart';
 import 'package:portofolio/persentation/pages/portofolio/widget/group_widget.dart';
 
@@ -17,6 +18,10 @@ class ContainerWidget extends StatelessWidget {
             height: CommonSize().size48,
           ),
           const GroupWidget(),
+          SizedBox(
+            height: CommonSize().size48,
+          ),
+          const ActionWidget(),
         ],
       ),
     );

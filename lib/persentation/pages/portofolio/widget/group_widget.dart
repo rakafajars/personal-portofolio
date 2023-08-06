@@ -9,6 +9,7 @@ class GroupWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         const LocationWidget(),
         SizedBox(
