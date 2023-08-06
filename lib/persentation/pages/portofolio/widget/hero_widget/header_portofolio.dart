@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:portofolio/common/common_size.dart';
 import 'package:portofolio/common/common_style.dart';
 import 'package:portofolio/data/models/header_model.dart';
-import 'package:portofolio/persentation/pages/portofolio/widget/header_widget.dart';
+import 'package:portofolio/persentation/pages/portofolio/widget/hero_widget/header_widget.dart';
 
 class HeaderPortofolio extends StatelessWidget {
   const HeaderPortofolio({super.key});
@@ -15,7 +15,6 @@ class HeaderPortofolio extends StatelessWidget {
         horizontal: CommonSize().size80,
         vertical: CommonSize().size16,
       ),
-      // height: 68,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
