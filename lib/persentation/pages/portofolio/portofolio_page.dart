@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:portofolio/persentation/pages/portofolio/widget/hero_widget/header_portofolio.dart';
 import 'package:portofolio/persentation/pages/portofolio/widget/hero_widget/hero_content.dart';
 
+import 'widget/about_widget/about_content.dart';
+
 class PortofolioPage extends StatelessWidget {
   const PortofolioPage({super.key});
   @override
@@ -17,6 +19,7 @@ class PortofolioPage extends StatelessWidget {
         child: Column(
           children: [
             HeroContent(),
+            AboutContent(),
           ],
         ),
       ),

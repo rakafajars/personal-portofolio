@@ -4,7 +4,7 @@ class CommonSize {
   // Mobile < 768
   int largeScreenSize = 1024;
   int mediumScreenSize = 768;
-
+  double size96 = 96;
   double size80 = 80;
   double size60 = 60;
   double size48 = 48;
@@ -18,4 +18,5 @@ class CommonSize {
   double size14 = 14;
   double size8 = 8;
   double size6 = 6;
+  double size4 = 4;
 }
